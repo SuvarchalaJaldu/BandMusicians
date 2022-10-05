@@ -74,7 +74,7 @@ public class MusicalBand {
 						break;
 					}
 				}
-				if (flag == true) {
+				if (canBeAddedToBand == true) {
 					statement += "Musician " + noBandMusician.getMusianName() + " joined " + bands.get(i).getBandName()
 							+ ". \n";
 					bands.get(i).getMusicians().add(noBandMusician);
