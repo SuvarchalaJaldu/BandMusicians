@@ -67,10 +67,10 @@ public class MusicalBand {
 			// By shuffling to get a random band
 			Collections.shuffle(bands);
 			for (int i = 0; i < bands.size(); i++) {
-				boolean flag = true;
+				boolean canBeAddedToBand = true;
 				for (Musician employedMusician : bands.get(i).getMusicians()) {
 					if (noBandInstrument.equals(employedMusician.getInstrument().getClass())) {
-						flag = false;
+						canBeAddedToBand = false;
 						break;
 					}
 				}
